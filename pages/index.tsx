@@ -1,25 +1,16 @@
-import Head from "next/head";
-import Image from "next/image";
-
-import { Sora } from "@next/font/google";
 import Layout from "@/components/Layout";
 
-const sora = Sora({
-  subsets: ["latin"],
-  variable: "--font-sora",
-});
+interface HomeProps {}
 
-export default function Home() {
+export default function Home({}: HomeProps) {
   return (
-    <>
-      <Layout>
-        <div>
-          <p>
-            Get started by editing&nbsp;
-            <code>pages/index.tsx</code>
-          </p>
-        </div>
-      </Layout>
-    </>
+    <Layout>
+      <div>
+        <p>
+          Get started by editing&nbsp;
+          <code>pages/index.tsx</code>
+        </p>
+      </div>
+    </Layout>
   );
 }

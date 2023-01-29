@@ -1,3 +1,7 @@
-export default function About() {
-  return <h1>about page</h1>;
+import Layout from "@/components/Layout";
+
+interface AboutProps {}
+
+export default function About({}: AboutProps) {
+  return <Layout>about page</Layout>;
 }
