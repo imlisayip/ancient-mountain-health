@@ -1,6 +1,6 @@
 export default function Acuity({}) {
   return (
-    <>
+    <div className="wrapper">
       <iframe
         src="https://app.acuityscheduling.com/schedule.php?owner=18622354"
         title="Schedule Appointment"
@@ -12,6 +12,6 @@ export default function Acuity({}) {
         src="https://embed.acuityscheduling.com/js/embed.js"
         type="text/javascript"
       ></script>
-    </>
+    </div>
   );
 }
