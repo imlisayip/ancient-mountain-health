@@ -1,65 +1,53 @@
+import { Disclosure } from "@headlessui/react";
 import Link from "next/link";
-import Headroom from "react-headroom";
 
-interface NavbarProps {}
-
-export default function Navbar({}: NavbarProps) {
+export default function NavBar() {
   return (
-    <Headroom>
-      <div className="flex py-8 px-8 justify-between gap-8">
-        <Link href={"/"} className="">
-          <img src="/logo.jpg" alt="" width={"90"} height={"90"} />
-        </Link>
-        <ul className="flex gap-5">
-          {/* todo aria */}
-          <li>
-            <Link href={"/about"} className="">
-              About
-            </Link>
-          </li>
-          <li>
-            <Link href={"/services"} className="">
-              Services
-            </Link>
-          </li>
-          <li>
-            <li>
-              <Link href={""} className="">
-                For Patient
+    <Disclosure as="nav">
+      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div className="relative flex h-16 items-center justify-between">
+          <div className="absolute inset-y-0 left-0 flex items-center sm:hidden"></div>
+          <div className="flex flex-1 items-center  sm:items-stretch sm:justify-start">
+            <div className="flex flex-shrink-0 items-center">
+              <Link href={"/"}>
+                <img
+                  className="block h-8 w-auto lg:hidden"
+                  src="./logo.svg"
+                  alt="Ancient Mountain Health"
+                />
+                <img
+                  className="hidden h-8 w-auto lg:block"
+                  src="./logo.svg"
+                  alt="Ancient Mountain Health"
+                />
               </Link>
-            </li>
-            {/* <li>
-              <Link href={""} className="">
-                form 2
-              </Link>
-            </li>
-            <li>
-              <Link href={""} className="">
-                form 3
-              </Link>
-            </li> */}
-          </li>
-          <li>
-            <Link href={"/contact"} className="">
-              Contact
-            </Link>
-          </li>
-        </ul>
-
-        <ul className="flex gap-5">
-          <li>
-            <Link href="https://goo.gl/maps/RuBQWYVfkRjZ2K8N8" className=" ">
-              540 Dellwood City Rd
-              <br /> Waynesville, NC
-            </Link>
-          </li>
-          <li>
-            <Link href="/booknow">
+            </div>
+          </div>
+          <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <a
+              href="https://goo.gl/maps/LKCMvXoErThjUfpu9"
+              className="flex items-center pr-4"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                className="w-6 h-6 inline-block"
+                viewBox="0 0 24 24"
+              >
+                <path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+              </svg>
+              <span className="pl-2 inline-block">540 Dellwood City Rd</span>
+            </a>
+            <Link href={"./booknow"}>
               <button>Book now</button>
             </Link>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
-    </Headroom>
+    </Disclosure>
   );
 }
