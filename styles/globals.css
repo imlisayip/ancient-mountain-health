@@ -1,3 +1,52 @@
 @tailwind base;
+
+@layer base {
+  :root {
+    --primary-color: #0a443d;
+    --alternate-color: #e8e8db;
+    --secondary-color: #ff6300;
+  }
+  h1 {
+    @apply text-5xl font-sans;
+  }
+  h2 {
+    @apply text-4xl;
+  }
+  h3 {
+    @apply text-3xl;
+  }
+  h4 {
+    @apply text-2xl;
+  }
+  h5 {
+    @apply text-xl;
+  }
+  html {
+    @apply text-base;
+    color: var(--primary-color);
+  }
+  p {
+    @apply py-4;
+  }
+  a {
+    @apply text-base;
+  }
+  button {
+    @apply text-gray-100 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium;
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  .wrapper {
+    @apply py-8 px-10 md:py-12 md:px-20 max-w-screen-xl m-auto p-0 w-screen;
+  }
+  .component {
+    background-color: #f4f4ed;
+  }
+  footer {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+}
+
 @tailwind components;
 @tailwind utilities;

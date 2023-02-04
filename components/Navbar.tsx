@@ -6,9 +6,10 @@ interface NavbarProps {}
 export default function Navbar({}: NavbarProps) {
   return (
     <Headroom>
-      <div className="flex py-8 px-8 align-middle justify-between">
-        <div>logo</div>
-
+      <div className="flex py-8 px-8 justify-between gap-8">
+        <Link href={"/"} className="">
+          <img src="/logo.jpg" alt="" width={"90"} height={"90"} />
+        </Link>
         <ul className="flex gap-5">
           {/* todo aria */}
           <li>
@@ -48,15 +49,13 @@ export default function Navbar({}: NavbarProps) {
         <ul className="flex gap-5">
           <li>
             <Link href="https://goo.gl/maps/RuBQWYVfkRjZ2K8N8" className=" ">
-              540 Dellwood City Rd, Waynesville, NC
+              540 Dellwood City Rd
+              <br /> Waynesville, NC
             </Link>
           </li>
           <li>
-            <Link
-              href="/booknow"
-              className="py-4 px-8 rounded bg-[color:var(--primary-color)] text-white"
-            >
-              Book now
+            <Link href="/booknow">
+              <button>Book now</button>
             </Link>
           </li>
         </ul>
