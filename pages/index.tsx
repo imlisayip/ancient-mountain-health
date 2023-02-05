@@ -38,17 +38,18 @@ export default function Home({}: HomeProps) {
           tapering off with resolution.
         </p>
         <br />
+        <br />
         <h5> Chinese medicine and massage can be beneficial in treating:</h5>
-        <div className="grid md:grid-rows-5 md:grid-flow-col gap-2 pt-4">
+        <div className="grid md:grid-rows-6 md:grid-flow-col gap-2 pt-4">
           <span>Low Back Pain</span>
           <span>Sciatica</span>
           <span>Neck Pain</span>
-          <span>Shoulder Pain / Rotator Cuff Pain</span>
           <span>Hip Pain / Arthritis</span>
           <span>Peripheral Neuropathy</span>
-          <span>Irritable Bowel Syndrome / Crohn’s</span>
           <span>Insomnia</span>
           <span>Anxiety / PTSD</span>
+          <span>Irritable Bowel Syndrome / Crohn’s</span>
+          <span>Shoulder Pain / Rotator Cuff Pain</span>
           <span>Depression</span>
           <span>Bell’s Palsey</span>
           <span>Knee Pain / Arthritis</span>
