@@ -7,8 +7,8 @@ export default function NavBar() {
 
   return (
     <>
-      <header aria-label="Site Header" className="bg-white">
-        <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
+      <header aria-label="Site Header" className="bg-white ">
+        <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8 ">
           <Link className="block text-teal-600" href="/">
             <span className="sr-only">Home</span>
             <img
@@ -106,13 +106,40 @@ export default function NavBar() {
           </div>
         </div>
         {menu && (
-          <div className="md:hidden mx-auto flex h-16 items-center bg-white absolute border-t-2 border-b-2 border-green-50">
-            <ul className="flex flex-col gap-8 px-4 w-screen relative ">
+          <div className="md:hidden mx-auto flex py-8 items-center text-center bg-white absolute border-green-50 shadow ">
+            <ul className="flex flex-col  px-4 w-screen relative ">
               {navigation.map((item) => (
-                <Link key={item.name} className="transition " href={item.href}>
-                  {item.name}
-                </Link>
+                <li key={item.name} className="shadow-sm py-6">
+                  <Link className="transition " href={item.href}>
+                    {item.name}
+                  </Link>
+                </li>
               ))}
+              <li className="pt-8">
+                <a
+                  href="https://goo.gl/maps/LKCMvXoErThjUfpu9"
+                  className="flex items-center justify-center md:hidden "
+                >
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-6 h-6 inline-block"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                  </svg>
+                  <span className="pl-2 inline-block">
+                    540 Dellwood City Rd
+                    <br />
+                    Waynesville, NC 28786 <br />
+                    (Inside Waynesville Wellness )
+                  </span>
+                </a>
+              </li>
             </ul>
           </div>
         )}
