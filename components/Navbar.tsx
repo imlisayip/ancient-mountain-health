@@ -40,7 +40,7 @@ export default function NavBar() {
 
             <div className="flex items-center gap-4">
               <div className="sm:flex sm:gap-4">
-                <a
+                <Link
                   href="https://goo.gl/maps/LKCMvXoErThjUfpu9"
                   className="hidden md:flex md:items-center"
                 >
@@ -59,13 +59,13 @@ export default function NavBar() {
                   <span className="pl-2 inline-block">
                     540 Dellwood City Rd
                   </span>
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/booknow"
                   className="inline-flex items-center rounded border border-green-800 bg-green-800 px-8 py-2.5 text-white hover:bg-transparent hover:text-green-800 focus:outline-none focus:ring active:text-green-700"
                 >
                   <span className="text-sm font-medium">Book Now</span>
-                </a>
+                </Link>
               </div>
 
               <button
