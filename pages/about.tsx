@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import ImageText from "@/components/ImageText";
 import Layout from "@/components/Layout";
 
@@ -30,7 +31,6 @@ export default function About({}: AboutProps) {
             </p>
           </div>
         </div>
-
         <img
           alt="photo of Noah"
           src="/noah.jpg"
