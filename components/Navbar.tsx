@@ -8,12 +8,12 @@ export default function NavBar() {
 
   return (
     <>
-      <header aria-label="Site Header" className="bg-white ">
-        <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8 ">
-          <Link className="block text-teal-600" href="/">
+      <header aria-label="Site Header" className="bg-white">
+        <div className="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
+          <Link className="block" href="/">
             <span className="sr-only">Home</span>
             <Image
-              className="block h-8 w-auto "
+              className="block h-8 w-auto"
               src={"./logo.svg"}
               alt={"Ancient Mountain Health Logo"}
               width={"150"}
@@ -119,7 +119,7 @@ export default function NavBar() {
                 </li>
               ))}
               <li className="pt-8">
-                <a
+                <Link
                   href="https://goo.gl/maps/LKCMvXoErThjUfpu9"
                   className="flex items-center justify-center md:hidden "
                 >
@@ -141,7 +141,7 @@ export default function NavBar() {
                     Waynesville, NC 28786 <br />
                     (Inside Waynesville Wellness )
                   </span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
