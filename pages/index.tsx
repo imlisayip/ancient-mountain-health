@@ -23,7 +23,7 @@ export default function Home({}: HomeProps) {
           Chinese medicine consists of multiple modalities including acupuncture
           which is the insertion of small filiform needles into the body. In
           addition to acupunture Noah utilizes cupping and Gua Sha therapy.
-          Cupping is done with siliocone cups and creates decompression of the
+          Cupping is done with silicone cups and creates decompression of the
           superficial tissues and is best for workout recovery and some mild
           muscular soreness. Gua Sha, also known as Instrument Assisted Massage,
           is a technique aimed at deeper more chronic muscle pain and is better
