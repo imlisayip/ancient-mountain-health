@@ -29,7 +29,7 @@ export default function ImageText({
             <div className="mt-4 md:mt-8">
               <a
                 href={url}
-                className="mt-8 inline-flex items-center rounded border border-green-800 bg-green-800 px-8 py-3 text-white hover:bg-transparent hover:text-green-800 focus:outline-none focus:ring active:text-green-700"
+                className="mt-8 inline-flex items-center rounded border px-8 py-3 text-white focus:outline-none focus:ring transition-colors duration-200 bg-primary border-primary hover:bg-transparent hover:text-primary"
               >
                 <span className="text-sm font-medium">{cta}</span>
                 <svg
@@ -51,9 +51,11 @@ export default function ImageText({
           </div>
         </div>
 
-        <img
+        <Image
           alt={alt}
           src={src}
+          width={800}
+          height={600}
           className="h-56 w-full object-cover sm:h-full"
         />
       </section>

@@ -14,7 +14,7 @@ export default function Home({}: HomeProps) {
             "Get personalized care for your health journey. Book your appointment with our expert professional today and start feeling your best. Invest in your well-being and take the first step towards improved health."
           }
           cta={"Book Appointment"}
-          src={"./mountains.jpg"}
+          src={"/mountains.jpg"}
           alt={"funchun mountains"}
         />
       </div>

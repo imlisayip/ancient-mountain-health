@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import ImageText from "@/components/ImageText";
 import Layout from "@/components/Layout";
 
@@ -31,9 +31,11 @@ export default function About({}: AboutProps) {
             </p>
           </div>
         </div>
-        <img
+        <Image
           alt="photo of Noah"
           src="/noah.jpg"
+          width={800}
+          height={600}
           className="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-tl-[30px] md:h-[calc(100%_-_4rem)] md:rounded-tl-[60px]"
         />
       </section>

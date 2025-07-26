@@ -14,10 +14,10 @@ export default function NavBar() {
             <span className="sr-only">Home</span>
             <Image
               className="block h-8 w-auto"
-              src={"./logo.svg"}
+              src={"/logo.svg"}
               alt={"Ancient Mountain Health Logo"}
-              width={"150"}
-              height={"105"}
+              width={150}
+              height={105}
             />
           </Link>
 
@@ -62,7 +62,7 @@ export default function NavBar() {
                 </Link>
                 <Link
                   href="/booknow"
-                  className="inline-flex items-center rounded border border-green-800 bg-green-800 px-8 py-2.5 text-white hover:bg-transparent hover:text-green-800 focus:outline-none focus:ring active:text-green-700"
+                  className="inline-flex items-center rounded border px-8 py-2.5 text-white focus:outline-none focus:ring transition-colors duration-200 bg-primary border-primary hover:bg-transparent hover:text-primary"
                 >
                   <span className="text-sm font-medium">Book Now</span>
                 </Link>
@@ -70,7 +70,7 @@ export default function NavBar() {
 
               <button
                 onClick={() => setMenu(!menu)}
-                className="block p-2.5 rounded border transition bg-white border-grey-100 md:hidden text-green-800 hover:bg-green-800 hover:text-white focus:outline-none focus:ring "
+                className="block p-2.5 rounded border transition bg-white border-gray-300 md:hidden text-primary hover:bg-primary hover:text-white focus:outline-none focus:ring"
               >
                 <span className="sr-only">Toggle menu</span>
                 {menu ? (
@@ -78,13 +78,13 @@ export default function NavBar() {
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke-width="1.5"
+                    strokeWidth="1.5"
                     stroke="currentColor"
                     className="w-5 h-5"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       d="M6 18L18 6M6 6l12 12"
                     />
                   </svg>

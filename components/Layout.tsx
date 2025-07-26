@@ -1,11 +1,12 @@
 import Footer from "./Footer";
 import Navbar from "./Navbar";
-import { Sora } from "@next/font/google";
+import { Sora } from "next/font/google";
 import Head from "next/head";
 
 const sora = Sora({
   subsets: ["latin"],
   variable: "--font-sora",
+  display: "swap",
 });
 
 interface LayoutProps {
@@ -25,7 +26,7 @@ export default function Layout({ children }: LayoutProps) {
         <link rel="icon" href="/logo.svg" />
       </Head>
 
-      <main className={`${sora.variable} font-sans`}>
+      <main className={`${sora.variable} font-sans antialiased`}>
         <Navbar />
         {children}
         <Footer />
