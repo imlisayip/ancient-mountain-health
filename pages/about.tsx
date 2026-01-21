@@ -13,7 +13,7 @@ export default function About({}: AboutProps) {
             <h2 className="text-2xl font-bold md:text-3xl">Noah Gallinger</h2>
             <p>
               Noah Gallinger is a Licensed Massage and Bodywork Therapist LMBT
-              #203330 and a Licensed Acupuncturist LAc # 2165.
+              #20330 and a Licensed Acupuncturist LAc # 2165.
             </p>
             <p>
               At Ancient Mountain Health, we strive to improve your well-being
