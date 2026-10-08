@@ -9,6 +9,7 @@ interface ImageText {
   url?: string;
   src: string;
   alt: string;
+  headingLevel?: "h1" | "h2";
 }
 
 export default function ImageText({
@@ -18,13 +19,17 @@ export default function ImageText({
   cta,
   src,
   alt,
+  headingLevel = "h2",
 }: ImageText) {
+  const Heading = headingLevel;
   return (
     <>
       <section className="overflow-hidden sm:grid sm:grid-cols-2">
         <div className="p-8 md:p-12 lg:px-16 lg:py-24">
           <div className="mx-auto max-w-lg text-center sm:text-left">
-            <h2 className="text-2xl font-bold md:text-3xl">{title}</h2>
+            <Heading className="text-2xl font-bold md:text-3xl">
+              {title}
+            </Heading>
             <p>{description}</p>
             <div className="mt-4 md:mt-8">
               <a

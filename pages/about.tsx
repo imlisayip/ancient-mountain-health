@@ -6,11 +6,15 @@ interface AboutProps {}
 
 export default function About({}: AboutProps) {
   return (
-    <Layout>
+    <Layout
+      title="About"
+      description="Meet Noah Gallinger, Licensed Massage and Bodywork Therapist and Licensed Acupuncturist serving Western North Carolina with a holistic blend of Eastern and Western medicine."
+      path="/about"
+    >
       <section className="component overflow-hidden sm:grid sm:grid-cols-2 sm:items-center">
         <div className="p-8 md:p-12 lg:px-16 lg:py-24">
           <div className="mx-auto max-w-xl text-center sm:text-left">
-            <h2 className="text-2xl font-bold md:text-3xl">Noah Gallinger</h2>
+            <h1 className="text-2xl font-bold md:text-3xl">Noah Gallinger</h1>
             <p>
               Noah Gallinger is a Licensed Massage and Bodywork Therapist LMBT
               #20330 and a Licensed Acupuncturist LAc # 2165.

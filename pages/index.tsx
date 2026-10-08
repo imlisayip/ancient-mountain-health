@@ -5,10 +5,14 @@ interface HomeProps {}
 
 export default function Home({}: HomeProps) {
   return (
-    <Layout>
+    <Layout
+      description="Acupuncture, cupping, and Gua Sha therapy for low back pain, sciatica, arthritis, insomnia, anxiety, and more. Book your appointment with Ancient Mountain Health today."
+      path="/"
+    >
       <div className="component">
         <ImageText
           url={"/booknow"}
+          headingLevel="h1"
           title={"Ancient Mountain Health"}
           description={
             "Get personalized care for your health journey. Book your appointment with our expert professional today and start feeling your best. Invest in your well-being and take the first step towards improved health."
@@ -39,7 +43,9 @@ export default function Home({}: HomeProps) {
         </p>
         <br />
         <br />
-        <h5> Chinese medicine and massage can be beneficial in treating:</h5>
+        <h2 className="text-2xl font-bold md:text-3xl">
+          Chinese medicine and massage can be beneficial in treating:
+        </h2>
         <div className="grid md:grid-rows-6 md:grid-flow-col gap-2 pt-4">
           <span>Low Back Pain</span>
           <span>Sciatica</span>

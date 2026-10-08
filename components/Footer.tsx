@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface FooterProps {}
 
@@ -7,14 +8,18 @@ export default function Footer({}: FooterProps) {
     <footer>
       <div className="wrapper">
         <div className="flex items-center flex-col md:flex-row justify-between">
-          <a className="flex title-font font-medium items-center md:justify-start justify-center">
+          <Link
+            href="/"
+            className="flex title-font font-medium items-center md:justify-start justify-center"
+          >
+            <span className="sr-only">Home</span>
             <Image
               src={"/logo.svg"}
               alt={"Ancient Mountain Health Logo"}
               width={150}
               height={105}
             />
-          </a>
+          </Link>
 
           <span className="flex flex-col pt-8 md:pt-0 gap-4 justify-end">
             <a href="tel:2183828786">

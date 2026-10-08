@@ -29,6 +29,8 @@
   html {
     @apply text-base;
     color: var(--primary-color);
+    background-color: var(--background-color);
+    color-scheme: light;
   }
   p {
     @apply py-4;
